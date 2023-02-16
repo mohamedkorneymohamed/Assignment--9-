@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+<body>
+<div class="section">
+    <div class="container">
+        <div class="title position-relative text-capitalize mb-3">
+            <h1 class="text-secondary p-5">book marker</h1>
+        </div>
+        <div class="form bg-body-secondary p-5">
+            <div class="formTitle text-center">
+                <h2>Bookmark your favorite sites</h2>
+                <div class="content">
+                    <label for="bookName" class="my-2">Site Name</label>
+                    <input type="text" placeholder="Bookmark Name" class="content form-control my-1 w-75 mx-auto" id="bookName" onkeyup="validationName()" >
+                    <div class="alert alert-danger w-75 mx-auto d-none " role="alert" id="alertName">
+                        Plase Enter Site Name
+                      </div>
+                    <label for="siteUrl" class="my-2">Site URL</label>
+                    <input type="text" placeholder="Bookmark URL" class="content form-control my-1 w-75 mx-auto" id="siteUrl" onkeyup="validationSite()">
+                    <div class="alert text-danger w-75 mx-auto   d-none" role="alert" id="alertUrl">
+                      Please Enter True Url  
+                      </div>
+                    <button class="btn btn-primary mx-auto my-2 d-block" onclick="addBook()" id="submit"> submit</button>
+                    <button class="btn btn-warning  my-2 d-none"  onclick="saveUpdate()" id="save"> save</button>
+                    <button class="btn btn-danger  my-2 d-none" onclick="cancelUpdate()" id="cancel"> cancel</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer mt-3 position-relative py-5">
+            <span class="text-secondary fs-5">© 2019 Bookmarker Inc.</span>
+        </div>
+<div id="contentInput"></div>
+    </div>
+</div>
+<script>src= "js/bootstrap.bundle.js"</script>
+<script src="js/main.js"></script>
+</body>
+</html>

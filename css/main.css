@@ -1,0 +1,24 @@
+.title::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+}
+.footer::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+}
+#contentInput .content{
+  background-image: linear-gradient(#EEE,#FFF);
+  margin: 10px 0;
+  padding: 20px;
+ 
+}
